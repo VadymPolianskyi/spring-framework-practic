@@ -17,7 +17,8 @@ public class AppController {
 
     @RequestMapping("/displayHeadelInfo.do")
     public void displayHeadelInfo(@RequestHeader("Accept-Encoding") String encoding,
-                                  @RequestHeader("Keep-Alive") long keepAlive) {
-        
+                                  @RequestHeader("Keep-Alive") long keepAlive,
+                                  @CookieValue("JSESSIONID") String cookie) {
+
     }
 }
